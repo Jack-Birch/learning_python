@@ -17,3 +17,16 @@ print('The value in L2 is:',L2)
 L1[0]=24				
 print('The value in L1 is:',L1)		#Therefore L1 is changed but L2 remains the same 	 
 print('The value in L2 is:',L2)
+
+#Can use 'is' operator to test whether the names point to the same object 
+print(L1 == L2)			#Both statements are false 
+print(L1 is L2)
+
+L1=[1,2,3]
+L2=L1
+print(L1 == L2)			#Both statements are true
+print(L1 is L2)
+
+L2=L1[:]
+print(L1 == L2)			#First is true, second is false 
+print(L1 is L2)
